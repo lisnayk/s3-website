@@ -1,6 +1,7 @@
 name: Copy to S3
 on:
-  workflow_dispatch: {}
+  push:
+    branches: [ "master" ]
 env:
   AWS_REGION: eu-central-1
   S3BUCKET: znu-deploy-bucket
